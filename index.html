@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 TRAP DOMINICANO 🎵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Poppins:wght@300;400;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="particle-container"></div>
+    </div>
+
+    <!-- Audio Visualizer -->
+    <div class="audio-visualizer">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="nav-logo">🎵</span>
+                <span class="nav-text">TRAP RD</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">INICIO</a>
+                <a href="#artist" class="nav-link">ARTISTA</a>
+                <a href="#songs" class="nav-link">MÚSICA</a>
+                <a href="#quote" class="nav-link">FILOSOFÍA</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-subtitle">BIENVENIDO AL MUNDO DE</div>
+                <h1 class="hero-title">
+                    <span class="glitch" data-text="TRAP">TRAP</span>
+                    <span class="glitch" data-text="DOMINICANO">DOMINICANO</span>
+                </h1>
+                <div class="hero-description">
+                    <span class="typing-text">19 años • Cultura Urbana • República Dominicana</span>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">TRACKS TOP</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">ARTISTA FAV</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">TRAP RD</div>
+                    </div>
+                </div>
+                <button class="hero-btn" onclick="scrollToSection('artist')">
+                    <span>CONOCE A HUAN62</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="vinyl-record">
+                    <div class="vinyl-inner">
+                        <div class="vinyl-center">
+                            <div class="vinyl-hole"></div>
+                        </div>
+                        <div class="vinyl-grooves"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Artist Section -->
+        <section id="artist" class="artist-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">👑</span>
+                    <span class="title-text">EL REY DEL TRAP</span>
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="artist-showcase">
+                <div class="artist-card-3d">
+                    <div class="artist-card-inner">
+                        <div class="artist-image-container">
+                            <div class="artist-image-frame">
+                                <div class="artist-avatar">
+                                    <svg width="200" height="200" viewBox="0 0 200 200" class="artist-svg">
+                                        <defs>
+                                            <linearGradient id="avatarGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+                                                <stop offset="30%" style="stop-color:#ff4444;stop-opacity:1" />
+                                                <stop offset="70%" style="stop-color:#cc0000;stop-opacity:1" />
+                                                <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                            </linearGradient>
+                                            <pattern id="artistPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                                <rect width="20" height="20" fill="url(#avatarGradient)"/>
+                                                <circle cx="10" cy="10" r="3" fill="rgba(255,255,255,0.1)"/>
+                                            </pattern>
+                                        </defs>
+                                        <circle cx="100" cy="100" r="90" fill="url(#artistPattern)" stroke="#ff0000" stroke-width="4"/>
+                                        <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                                        <!-- Artist silhouette -->
+                                        <g transform="translate(100,100)">
+                                            <!-- Head -->
+                                            <circle cx="0" cy="-20" r="25" fill="rgba(255,255,255,0.9)"/>
+                                            <!-- Body -->
+                                            <rect x="-15" y="5" width="30" height="40" rx="5" fill="rgba(255,255,255,0.8)"/>
+                                            <!-- Arms -->
+                                            <rect x="-25" y="10" width="10" height="25" rx="5" fill="rgba(255,255,255,0.7)"/>
+                                            <rect x="15" y="10" width="10" height="25" rx="5" fill="rgba(255,255,255,0.7)"/>
+                                            <!-- Microphone -->
+                                            <circle cx="30" cy="15" r="4" fill="#ff0000"/>
+                                            <rect x="25" y="15" width="8" height="2" fill="#000"/>
+                                        </g>
+                                        <!-- Text "H62" -->
+                                        <text x="100" y="160" text-anchor="middle" font-family="Orbitron" font-size="16" font-weight="bold" fill="#ff0000">H62</text>
+                                    </svg>
+                                </div>
+                                <div class="artist-glow"></div>
+                            </div>
+                        </div>
+                        <div class="artist-info">
+                            <h3 class="artist-name">HUAN62</h3>
+                            <p class="artist-title">Artista de Trap Dominicano</p>
+                            <div class="artist-badges">
+                                <span class="badge primary">MI FAVORITO</span>
+                                <span class="badge secondary">TRAP RD</span>
+                            </div>
+                            <div class="artist-social">
+                                <button class="social-btn youtube" data-platform="youtube">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </button>
+                                <button class="social-btn spotify" data-platform="spotify">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Songs Section -->
+        <section id="songs" class="songs-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">🎧</span>
+                    <span class="title-text">TOP TRACKS</span>
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="songs-container">
+                <div class="song-card" data-song="chiquita">
+                    <div class="song-bg"></div>
+                    <div class="song-artwork">
+                        <svg width="80" height="80" viewBox="0 0 80 80" class="song-cover-svg">
+                            <defs>
+                                <linearGradient id="chiquitaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff0066;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#ff0000;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#660000;stop-opacity:1" />
+                                </linearGradient>
+                                <pattern id="chiquitaPattern" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                                    <circle cx="5" cy="5" r="2" fill="rgba(255,255,255,0.1)"/>
+                                </pattern>
+                            </defs>
+                            <rect width="80" height="80" fill="url(#chiquitaGradient)" rx="8"/>
+                            <rect width="80" height="80" fill="url(#chiquitaPattern)" rx="8"/>
+                            <!-- Heart symbol for "Chiquita" -->
+                            <path d="M40 55 C35 50, 25 45, 25 35 C25 30, 30 25, 35 25 C37 25, 39 26, 40 28 C41 26, 43 25, 45 25 C50 25, 55 30, 55 35 C55 45, 45 50, 40 55Z" fill="rgba(255,255,255,0.9)"/>
+                            <text x="40" y="70" text-anchor="middle" font-family="Orbitron" font-size="8" font-weight="bold" fill="#fff">CHIQUITA</text>
+                        </svg>
+                    </div>
+                    <div class="song-content">
+                        <div class="song-number">01</div>
+                        <div class="song-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <div class="song-info">
+                            <h3 class="song-title">CHIQUITA</h3>
+                            <p class="song-artist">Huan62</p>
+                        </div>
+                        <div class="song-duration">3:42</div>
+                        <div class="song-platforms">
+                            <button class="platform-btn youtube" data-platform="youtube">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </button>
+                            <button class="platform-btn spotify" data-platform="spotify">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="song-wave">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                    </div>
+                </div>
+
+                <div class="song-card" data-song="ktede">
+                    <div class="song-bg"></div>
+                    <div class="song-artwork">
+                        <svg width="80" height="80" viewBox="0 0 80 80" class="song-cover-svg">
+                            <defs>
+                                <linearGradient id="ktedeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff4400;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#ff0000;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#220000;stop-opacity:1" />
+                                </linearGradient>
+                                <pattern id="ktedePattern" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+                                    <rect width="4" height="4" fill="rgba(255,255,255,0.1)"/>
+                                    <rect x="4" y="4" width="4" height="4" fill="rgba(255,255,255,0.1)"/>
+                                </pattern>
+                            </defs>
+                            <rect width="80" height="80" fill="url(#ktedeGradient)" rx="8"/>
+                            <rect width="80" height="80" fill="url(#ktedePattern)" rx="8"/>
+                            <!-- Lightning bolt for "KTEDE" -->
+                            <path d="M30 20 L50 20 L40 40 L55 40 L35 65 L45 45 L30 45 Z" fill="rgba(255,255,255,0.9)" stroke="#ff0000" stroke-width="1"/>
+                            <text x="40" y="75" text-anchor="middle" font-family="Orbitron" font-size="8" font-weight="bold" fill="#fff">KTEDE</text>
+                        </svg>
+                    </div>
+                    <div class="song-content">
+                        <div class="song-number">02</div>
+                        <div class="song-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <div class="song-info">
+                            <h3 class="song-title">KTEDE</h3>
+                            <p class="song-artist">LilNaay</p>
+                        </div>
+                        <div class="song-duration">2:58</div>
+                        <div class="song-platforms">
+                            <button class="platform-btn youtube" data-platform="youtube">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </button>
+                            <button class="platform-btn spotify" data-platform="spotify">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="song-wave">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                    </div>
+                </div>
+
+                <div class="song-card" data-song="lipo">
+                    <div class="song-bg"></div>
+                    <div class="song-artwork">
+                        <svg width="80" height="80" viewBox="0 0 80 80" class="song-cover-svg">
+                            <defs>
+                                <linearGradient id="lipoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#cc0000;stop-opacity:1" />
+                                    <stop offset="50%" style="stop-color:#ff0000;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+                                </linearGradient>
+                                <pattern id="lipoPattern" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+                                    <polygon points="6,0 12,6 6,12 0,6" fill="rgba(255,255,255,0.1)"/>
+                                </pattern>
+                            </defs>
+                            <rect width="80" height="80" fill="url(#lipoGradient)" rx="8"/>
+                            <rect width="80" height="80" fill="url(#lipoPattern)" rx="8"/>
+                            <!-- Diamond/Star for "LIPO" -->
+                            <polygon points="40,15 50,30 55,40 50,50 40,65 30,50 25,40 30,30" fill="rgba(255,255,255,0.9)" stroke="#ff0000" stroke-width="1"/>
+                            <circle cx="40" cy="40" r="8" fill="rgba(255,0,0,0.8)"/>
+                            <text x="40" y="75" text-anchor="middle" font-family="Orbitron" font-size="8" font-weight="bold" fill="#fff">LIPO</text>
+                        </svg>
+                    </div>
+                    <div class="song-content">
+                        <div class="song-number">03</div>
+                        <div class="song-play-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                        <div class="song-info">
+                            <h3 class="song-title">LIPO</h3>
+                            <p class="song-artist">Luis Brown</p>
+                        </div>
+                        <div class="song-duration">3:15</div>
+                        <div class="song-platforms">
+                            <button class="platform-btn youtube" data-platform="youtube">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </button>
+                            <button class="platform-btn spotify" data-platform="spotify">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="song-wave">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section id="quote" class="quote-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon">💭</span>
+                    <span class="title-text">MI FILOSOFÍA</span>
+                </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="quote-container">
+                <div class="quote-card">
+                    <div class="quote-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="quote-text">
+                        <span class="quote-mark">"</span>
+                        <span class="quote-content">TWTD LOS NIÑOS NO HABLAN</span>
+                        <span class="quote-mark">"</span>
+                    </blockquote>
+                    <div class="quote-author">
+                        <div class="quote-label">Frase que me representa</div>
+                        <div class="quote-date">2025</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵</span>
+                    <span class="footer-text">TRAP DOMINICANO</span>
+                </div>
+                <div class="footer-info">
+                    <p>Cultura Urbana • República Dominicana • 2025</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer-social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Floating Music Player -->
+    <div class="floating-player">
+        <div class="player-controls">
+            <button class="player-btn prev">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+                </svg>
+            </button>
+            <button class="player-btn play">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </button>
+            <button class="player-btn next">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="player-info">
+            <div class="player-track">Selecciona una canción</div>
+            <div class="player-artist">Trap Dominicano</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
